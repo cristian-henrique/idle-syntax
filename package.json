@@ -1,0 +1,16 @@
+{
+  "name": "idle-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "IDLE syntax theme for Atom",
+  "keywords": [
+    "syntax",
+    "idle",
+    "theme"
+  ],
+  "repository": "https://github.com/cristian-henrique/idle-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
