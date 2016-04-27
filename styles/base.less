@@ -1,0 +1,128 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.comment {
+  color: #919191;
+}
+
+.string {
+  color: #00AA00;
+}
+
+.constant.numeric {
+}
+
+.constant.language {
+  color: #B936C2;
+}
+
+.constant.character, .constant.other {
+}
+
+.variable.language, .variable.other {
+  color: #000000;
+}
+
+.keyword {
+  color: #FF7700;
+}
+
+.storage {
+  color: #FF7700;
+}
+
+.entity.name.type {
+  color: #000000;
+}
+
+.entity.other.inherited-class {
+}
+
+.entity.name.function {
+  color: #0000FF;
+}
+
+.variable.parameter {
+}
+
+.entity.name.tag {
+}
+
+.entity.other.attribute-name {
+}
+
+.support.function {
+  color: #000000;
+}
+
+.support.constant {
+  color: #000000;
+}
+
+.support.type, .support.class {
+  color: #000000;
+}
+
+.support.variable {
+  color: #000000;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+
+.constant.other.placeholder.py {
+  color: #990000;
+}
